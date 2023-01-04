@@ -3077,7 +3077,7 @@ input, select, textarea {
 				text-align: center;
 				top: auto;
 				width: 100%;
-				display: block;
+				display: flex;
 			}
 
 				#header h1 {
