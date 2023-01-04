@@ -3067,10 +3067,12 @@ input, select, textarea {
 
 			#header {
 				background-attachment: scroll;
-				background-position: top left, center center;
-				background-size: 400% 400%;
+				background-color: #1f1815;
 				background: linear-gradient(-45deg, #155d27, #1a7431, #25a244, #2a6f97, #01497c, #012a4a);
 				animation: gradient 15s ease infinite;
+				background-position: top left, center center;
+				background-size: 400% 400%;
+				background-repeat: repeat,							no-repeat;
 				left: auto;
 				padding: 6em 4em;
 				position: relative;
