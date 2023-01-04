@@ -3069,6 +3069,7 @@ input, select, textarea {
 				background-attachment: scroll;
 				background-position: top left, center center;
 				background-size: 400% 400%;
+				animation: gradient 15s ease infinite;
 				left: auto;
 				padding: 6em 4em;
 				position: relative;
