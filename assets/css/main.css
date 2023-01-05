@@ -2980,11 +2980,6 @@ input, select, textarea {
 		display: none !important;
 	}
 
-	body.is-touch #header {
-		background-attachment: scroll;
-		background-size: auto, cover;
-	}
-
 	body.is-touch .poptrox-popup .nav-next,
 	body.is-touch .poptrox-popup .nav-previous,
 	body.is-touch .poptrox-popup .closer {
@@ -3079,7 +3074,6 @@ input, select, textarea {
 				text-align: center;
 				top: auto;
 				width: 100%;
-				display: flex;
 			}
 
 				#header h1 {
