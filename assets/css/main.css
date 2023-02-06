@@ -2996,6 +2996,11 @@ input, select, textarea {
 				font-size: 12pt;
 			}
 
+		/* Hidden XLarge */
+			.hidden-reg{
+				display: none;
+			}
+
 	}
 
 /* Large */
@@ -3038,6 +3043,11 @@ input, select, textarea {
 				max-width: none;
 				padding: 6em 3em 3em 3em;
 				width: calc(100% - 30%);
+			}
+		
+		/* Hidden Large */
+			.hidden-reg{
+				display: none;
 			}
 
 	}
@@ -3126,6 +3136,11 @@ input, select, textarea {
 				width: 100%;
 			}
 
+		/* Hidden Medium */
+			.hidden-reg{
+				display: none;
+			}
+
 	}
 
 /* Small */
@@ -3203,8 +3218,17 @@ input, select, textarea {
 				.poptrox-popup .nav-previous:before {
 					margin-top: -1em;
 				}
+		
+		/* Hidden Mobile */
+		.hidden-mobile {
+			display: none;
+		}
+		.hidden-reg{
+			display: block;
+		}
 
 	}
+
 
 /* XSmall */
 
