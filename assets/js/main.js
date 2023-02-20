@@ -4,7 +4,7 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
-function hideContent() {
+function hideInfo() {
 	var x = document.getElementById("myHidden");
 	if (x.style.display === "none") {
 	  x.style.display = "block";
@@ -12,6 +12,17 @@ function hideContent() {
 	} else {
 	  x.style.display = "none";
 	  document.getElementById("hideText").innerHTML = "Find out some more!";
+	}
+}
+
+function hideProj() {
+	var x = document.getElementById("hidden_proj");
+	if (x.style.display === "none") {
+	  x.style.display = "block";
+	  document.getElementById("projText").innerHTML = "Show less!";
+	} else {
+	  x.style.display = "none";
+	  document.getElementById("projText").innerHTML = "Smaller Projects!";
 	}
 }
 

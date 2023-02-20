@@ -3255,3 +3255,16 @@ input, select, textarea {
 			}
 
 	}
+
+	.status-light {
+		margin: 5px 10px;
+		width: 12px;
+		height: 12px;
+		border-radius: 50%;
+		float: left;
+	}
+
+	.sl-green {
+		background-color: #690;
+		box-shadow: #460 0 -1px 9px, #7D0 0 0px 5px;
+	}
