@@ -91,75 +91,152 @@
 						</header>
 						<div class="row">
 							<article class="col-6 col-12-xsmall work-item">
-								<h3>Producing Novel Music Using a Deep Neural Network</h3> <br />
+								<h3>Producing Novel Music Using a Deep Neural Network</h3>
+								<div style="text-align: center;">
+									<h5>Languages: Python</h5>
+									<h5>
+										Data Types: 
+										<span id="dnn_Data"></span>
+										<div class='console-underscore' id='console'>&#95;</div>
+									</h5>
+									<h5>
+										Libraries: 
+										<span id="dnn_Libraries"></span>
+										<div class='console-underscore' id='console'>&#95;</div>
+									</h5>
+								</div><br />
 								<p>
 									This project was used as part of my AI MSc at the University of Kent for my final Dissertation.
 									With this project, I wanted to comprise a dataset of different songs by various artists,
 									constructing a deep neural network that can find patterns and learn to produce songs of its own.
-								</p> <br />
-								<p>
-									I used a variety of datasets for different types of music files, namely; WAV, MP3 and MIDI files.
-									The technologies I used for the data collection and manipulation was Music21 and Librosa. When it
-									came to the construction of the network I used a variety of libraries such as; TensorFlow, Keras,
-									Pandas, NumPy and SkLearn.
-								</p>
+								</p> 
+								<!-- Hide content from this point (until expanded)-->
+								<div id="hideDNN" style="display: none;"> <br /> 
+									<p>
+										Within this project I had to collect different sets of music data, comprising of MP3, WAV and MIDI files. 
+										I stored these files locally with relevant tagging that can be easily interpreted by the Neural Network 
+										I was going to feed this information through. 
+										First I needed to analyse the different formats to see what patterns could be identifiable and 
+										how they would be relevant to the reproduction of a new music sound file. Upon analysis the best dataset 
+										turned out to be with MIDI files, due to their easily interpretable nature, it made reproducing data possible. 
+										The other formats were still able to identify patterns, however, only white noise could be made when reproducing the data. 
+									</p> <br />
+									<p>
+										Creating a Convolutional Neural Network with the use of TensorFlow and Kera's, 
+										I was able to analyse a test and validation set of MIDI files to reproduce musical data. 
+										This data was very rudimentary and although it resembled that of the original data, 
+										there was still some kinks that could be worked out. 
+									</p> <br />
+									<p>
+										Overall this was a fun and interesting project, 
+										where I got to work with a range of different data collection and analysis techniques as well as ML. 
+									</p> <br />
+								</div> <br />
+								<ul class="actions fit small">
+									<li><a onclick="hideProj('hideDNN', 'textDNN')" id="textDNN" class="button hidden-reg primary fit small">Learn more!</a></li>
+								</ul>
 							</article>
 							<article class="col-6 col-12-xsmall work-item">
-								<h3>Using Reinforcement Learning to Play Tetris</h3> <br />
+								<h3>Using Reinforcement Learning to Create an Agent that Can Play Tetris</h3> 
+								<div style="text-align: center;">
+									<h5>Languages: Python</h5>
+									<h5>
+										Data Types: Tetris Game-State
+									</h5>
+									<h5>
+										Libraries: 
+										<span id="tetris_Libraries"></span>
+										<div class='console-underscore' id='console'>&#95;</div>
+									</h5>
+								</div><br />
 								<p>
 									This was a group project as part of my Natural Computation module in my AI MSc.
 									For this project, I was elected team leader for a group of three,
 									where we had to use reinforcement learning techniques to produce an AI that could play Tetris.
-								</p> <br />
-								<p>
-									For this project we used a range of Python libraries, such as;
-									PyGame, PyTorch, NumPy, MatPlotLib and tkinter.
-									We had to separate the project into a few different areas,
-									one for the building of the game board and mechanics,
-									one for the controlling and understanding of the game state,
-									and the final for the Neural Network that would be processing the game.
 								</p>
-							</article>
+								<div id="hideTetris" style="display: none;"> <br />
+									<p>
+										For this project we used a range of Python libraries, such as;
+										PyGame, PyTorch, NumPy, MatPlotLib and tkinter.
+										We had to separate the project into a few different areas,
+										one for the building of the game board and mechanics,
+										one for the controlling and understanding of the game state,
+										and the final for the Neural Network that would be processing the game.
+									</p>
+								</div> <br />
+								<ul class="actions fit small">
+									<li><a onclick="hideProj('hideTetris', 'textTetris')" id="textTetris" class="button hidden-reg primary fit small">Learn more!</a></li>
+								</ul>
+							</article> 
+							<ul class="actions fit small">
+								<li><a onclick="hideDoubleProj('hideDNN', 'hideTetris', 'textDNNTetris')" id="textDNNTetris" class="hidden-mobile button primary fit small">Learn more!</a></li>
+							</ul>
 							<article class="col-6 col-12-xsmall work-item">
-								<h3>Making an Automated Smart Desk</h3> <br />
+								<h3>Making an Automated Smart Desk Using Arduino and Alexa</h3> 
+								<div style="text-align: center;">
+									<h5>Languages: C++</h5>
+									<h5>
+										Data Types:
+										<span id="smartDesk_Data"></span>
+										<div class='console-underscore' id='console'>&#95;</div>
+									</h5>
+									<h5>
+										Libraries:
+										<span id="smartDesk_Libraries"></span>
+										<div class='console-underscore' id='console'>&#95;</div>
+									</h5>
+								</div><br />
 								<p>This was a fun little project I did for my IOT module as part of my MSc in AI.
 									In this project I used an Arduino and an Alexa to automate my desk set-up.
-								</p> <br />
-								<p>
-									The idea of the project was to run an Alexa routine as the presence of a
-									person is detected by the Arduino. This would be fully customisable by the user,
-									however, it would essentially get the mood right as a user is sat at their desk for work.
-								</p>
+								</p> 
+								<div id="hideSmartDesk" style="display: none;"> <br />
+									<p>
+										The idea of the project was to run an Alexa routine as the presence of a
+										person is detected by the Arduino. This would be fully customisable by the user,
+										however, it would essentially get the mood right as a user is sat at their desk for work.
+									</p>
+								</div> <br />
+								<ul class="actions fit small">
+									<li><a onclick="hideProj('hideSmartDesk', 'textSmartDesk')" id="textSmartDesk" class="button hidden-reg primary fit small">Learn more!</a></li>
+								</ul>
 							</article>
 							<article class="col-6 col-12-xsmall work-item">
-								<h3>Creating a Booking System for Golf Club Fittings using Android Studio</h3> <br />
+								<h3>Creating a Booking System for Golf Club Fittings using Android Studio</h3> 
+								<div style="text-align: center;">
+									<h5>
+										Languages:
+										<span id="app_Lang"></span>
+										<div class='console-underscore' id='console'>&#95;</div>
+									</h5>
+									<h5>
+										Data Types:
+										<span id="app_Data"></span>
+										<div class='console-underscore' id='console'>&#95;</div>
+									</h5>
+									<h5>
+										Libraries:
+										<span id="app_Libraries"></span>
+										<div class='console-underscore' id='console'>&#95;</div>
+									</h5>
+								</div><br />
 								<p>
 									This project was done in collaboration with the Complete Golfer,
 									as part of my Android Development module in my Computing BSc third year.
-								</p> <br />
-								<p>
-									Using Android Studio I created a form for saving customer information as
-									they check in for a club fitting, saving this data to an internal MySQL database.
 								</p> 
+								<div id="hideApp" style="display: none;"> <br />
+									<p>
+										Using Android Studio I created a form for saving customer information as
+										they check in for a club fitting, saving this data to an internal MySQL database.
+									</p> 
+								</div> <br />
+								<ul class="actions fit small">
+									<li><a onclick="hideProj('hideApp', 'textApp')" id="textApp" class="button hidden-reg primary fit small">Learn more!</a></li>
+								</ul>
 							</article>
+							<ul class="actions fit small hidden-mobile">
+								<li><a onclick="hideDoubleProj('hideSmartDesk', 'hideApp', 'textSmartAPP')" id="textsmartApp" class="hidden-mobile button primary fit small">Learn more!</a></li>
+							</ul>
 						</div>
-						<div id="hidden_proj" style="display: none;">
-							<div class="row">
-								<article class="col-6 col-12-small work-item">
-									<h3>Blue Cloud Journal</h3>
-								</article>
-								<article class="col-6 col-12-small work-item">
-									<h3>IMDB and Movie Sequels Data Visualisation</h3>
-								</article>
-								<article class="col-4 col-12-small work-item">
-									<div class="status-light sl-green"></div>
-									<h3>Water Bottle Classification</h3>
-								</article>
-							</div>
-						</div>
-						<ul class="actions fit small" style="display: none;">
-							<li><a onclick="hideProj()" id="projText" class="button primary fit small">Smaller Projects!</a></li>
-						</ul>
 					</section>
 
 				<!-- Three -->

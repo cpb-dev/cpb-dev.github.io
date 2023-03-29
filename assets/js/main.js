@@ -4,13 +4,57 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
-// function([string1, string2],target id,[color1,color2])    
+// function([string1, string2],target id,[color1,color2])  
+colours = [
+	'#f28482', '#ee9b00', '#003049', '#81b29a', '#2f3e46', 
+	'#eb5e28', '#bc4749', '#495057', '#b56576', '#3d5a80']  
 consoleText([
 	'NumPy.', 'MatPlotLib.', 'TensorFlow.', 'Keras.', 'Pandas.', 
 	'PyTorch.', 'Plotly.', 'Seaborn.', 'SkLearn.', 'PIL.'], 
 	'text',
-	['#f28482', '#ee9b00', '#003049', '#81b29a', '#2f3e46', 
-	'#eb5e28', '#bc4749', '#495057', '#b56576', '#3d5a80']);
+	colours);
+
+consoleText([
+	'MP3', 'WAV', 'MIDI'], 
+	'dnn_Data',
+	colours);
+
+consoleText([
+	'NumPy', 'MatPlotLib', 'TensorFlow', 'Keras', 'Pandas', 
+	'Music21', 'Librosa', 'SkLearn'], 
+	'dnn_Libraries',
+	colours);
+
+consoleText([
+	'PyGame', 'NumPy', 'MatPlotLib', 'Pickle', 'PyTorch',
+	'tkinter'], 
+	'tetris_Libraries',
+	colours);
+
+consoleText(['Smart Things', 'Alexa Command', 'Hyper Sonic Sensor'], 
+	'smartDesk_Data',
+	colours);
+
+consoleText([
+	'WiFi.h', 'HTTPClient.h'], 
+	'smartDesk_Libraries',
+	colours);
+
+consoleText([
+	'JavaScript', 'SQL', 'XML'], 
+	'app_Lang',
+	colours);
+
+consoleText([
+	'VARCHAR', 'DATETIME', 'FLOAT', 'INT'], 
+	'app_Data',
+	colours);
+
+consoleText([
+	'SQLiteOpenHelper', 'SQLiteDatabase', 'MatPlotLib', 'Pickle', 'PyTorch',
+	'tkinter'], 
+	'app_Libraries',
+	colours);
 
 function consoleText(words, id, colors) {
   if (colors === undefined) colors = ['#fff'];
@@ -72,14 +116,28 @@ function hideInfo() {
 	}
 }
 
-function hideProj() {
-	var x = document.getElementById("hidden_proj");
+function hideProj(project, text) {
+	var x = document.getElementById(project);
 	if (x.style.display === "none") {
 	  x.style.display = "block";
-	  document.getElementById("projText").innerHTML = "Show less!";
+	  document.getElementById(text).innerHTML = "Show less!";
 	} else {
 	  x.style.display = "none";
-	  document.getElementById("projText").innerHTML = "Smaller Projects!";
+	  document.getElementById(text).innerHTML = "Learn more!";
+	}
+}
+
+function hideDoubleProj(project, project2, text) {
+	var x = document.getElementById(project);
+	var y = document.getElementById(project2);
+	if (x.style.display === "none" && y.style.display === "none") {
+	  x.style.display = "block";
+	  y.style.display = "block";
+	  document.getElementById(text).innerHTML = "Show less!";
+	} else {
+	  x.style.display = "none";
+	  y.style.display = "none";
+	  document.getElementById(text).innerHTML = "Learn more!";
 	}
 }
 
