@@ -17,8 +17,8 @@
 			<header id="header">
 				<div class="inner align-center">
 					<a class="image avatar"><img src="images/conor_profile.jpg" /></a>
-					<h1 class="glitch-text" title="Conor Bailey!"><strong>Conor Bailey!</strong></h1>
-					<h1 class="glitch-text" title="Python & Web Developer">Python & Web Developer</h1>
+					<h1><strong>Conor Bailey!</strong></h1>
+					<h1>Python & Web Developer</h1>
 				</div>
 			</header>
 
@@ -31,7 +31,7 @@
 							<h2>About Me!</h2>
 						</header>
 						<span class="image right">
-							<img src="images/aboutme_profile.jpg" alt="Photo of Me" />
+							<img src="images/aboutme_profile.jpg" alt="Photo of Me" style="max-height: 200px;" />
 						</span>
 						<p>
 							I recently graduated from an Artificial Intelligence MSc at University of Kent,
@@ -137,7 +137,7 @@
 								</ul>
 							</article>
 							<article class="col-6 col-12-xsmall work-item">
-								<h3>Using Reinforcement Learning to Create an Agent that Can Play Tetris</h3> 
+								<h3>Creating a Reinforcement Learning Agent to Play Tetris</h3> 
 								<div style="text-align: center;">
 									<h5>Languages: Python</h5>
 									<h5>
@@ -150,18 +150,43 @@
 									</h5>
 								</div><br />
 								<p>
-									This was a group project as part of my Natural Computation module in my AI MSc.
-									For this project, I was elected team leader for a group of three,
-									where we had to use reinforcement learning techniques to produce an AI that could play Tetris.
+									This was a group project as part of my AI Systems Implementation module in my AI MSc. 
+									For this project, I was elected team leader for a group of three, 
+									where we had to use reinforcement learning techniques to produce an AI that could play Tetris. 
+									We split this task equally between us, working on different components, 
+									however, we all had a chance to pitch in ideas and help with code where appropriate.
 								</p>
 								<div id="hideTetris" style="display: none;"> <br />
 									<p>
-										For this project we used a range of Python libraries, such as;
-										PyGame, PyTorch, NumPy, MatPlotLib and tkinter.
-										We had to separate the project into a few different areas,
-										one for the building of the game board and mechanics,
-										one for the controlling and understanding of the game state,
-										and the final for the Neural Network that would be processing the game.
+										First we had to build the game up from scratch, 
+										so we were able to control the process more intently. 
+										For this we used PyGame, 
+										where one member of the team used the library to create the game pieces and game board. 
+										Implementing controls and a scoreboard, 
+										we were then ready to move onto the actual building of an agent that can learn to play the game. 
+										This was the basis to where we can create a depiction of the game state.
+									</p><br />
+									<p>
+										Moving on, we had a few meetings where we discussed the goals 
+										of the agent and how to measure its success when implementing 
+										a reinforcement learning algorithm. For this we needed to compile 
+										a list of rules in which the agent will need to follow and in what 
+										conditions the optimal choice can be made. For example, the agent 
+										should look to complete a row when it can, however, if it can place 
+										a block that can destroy 2 rows then that is better.
+									</p><br />
+									<p>
+										With this we then made the Neural Network in which these scenarios 
+										will be run and the best paths would be chosen. 
+										I headlined this part of the project, focusing on creating a model using PyTorch. 
+										I used a population size of 20, 
+										whereby the best 20% is chosen to move to the next generation. 
+										Using the rules we set in place, the agent started off slow but progress was made.
+									</p> <br />
+									<p>
+										Ultimately, 
+										this was a fun project, 
+										and I enjoyed that the project was orientated around such an established game.
 									</p>
 								</div> <br />
 								<ul class="actions fit small">
