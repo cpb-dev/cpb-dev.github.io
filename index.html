@@ -211,14 +211,58 @@
 										<div class='console-underscore' id='console'>&#95;</div>
 									</h5>
 								</div><br />
-								<p>This was a fun little project I did for my IOT module as part of my MSc in AI.
-									In this project I used an Arduino and an Alexa to automate my desk set-up.
+								<p>This was a fun little project I did for my IOT module as part of my MSc in AI. 
+									In this project I used an Arduino and an Alexa to automate my desk set-up. 
+									As a student and gamer, the main controls the desk needed was over the lighting and the music. 
 								</p> 
 								<div id="hideSmartDesk" style="display: none;"> <br />
 									<p>
-										The idea of the project was to run an Alexa routine as the presence of a
-										person is detected by the Arduino. This would be fully customisable by the user,
-										however, it would essentially get the mood right as a user is sat at their desk for work.
+										I was given an Arduino in which I could collect information about the current state of the desk. 
+										I had a couple of solutions to this problem, 
+										both depending on the potential use of the project. 
+										The first was an ultra sonic sensor, 
+										this could sense when a presence is at the desk. 
+										The second was an RFID chip and sensor, 
+										this idea was shortlisted for a commercial use of the product, 
+										as each RFID chip could have different needs from the desk, 
+										which is perfect for hot desking. 
+										However, I decided against the RFID due to taking unnecessary additional effort from the user, 
+										as well as, memory concerns on the Arduino.
+									</p> <br />
+									<p>
+										With the ultra sonic sensor, 
+										I needed to interpret the information it provides in a meaningful manner. 
+										As the sensor works by detecting how far away the nearest object is, 
+										I first needed to make sure the sensor is put in place with no obstacles in its way, 
+										then I needed to know the distance a person would be detected from in order ton trigger an event. 
+										For this I used a detection light, 
+										which displayed red when no one was present and green when there was. 
+										Within my code, 
+										I had a variable for the distance a person usually is from the sensor when they're present 
+										at the desk, with slack given 30cm further from that distance and 10cm closer. 
+										This allowed the device to comfortably recognise a presence at the desk.
+									</p> <br />
+									<p> 
+										The final part of the project was to get the device to interact with my 
+										Alexa and trigger a routine for the desk to follow. 
+										Upon research, there was a way to create a button in SmartThings that can 
+										be triggered by an access token in C++ Arduino code. In the code, 
+										I was able to trigger these buttons on and off. Using the Alexa application, 
+										I added these SmartThings buttons as smart devices. 
+										These buttons were then integrated into regular Alexa routines, 
+										like you would do for other smart home devices. Not only did this work, 
+										but I was able to trigger different routines based on different parameters. 
+										The additional routines I made for this project was based on the time of day, 
+										setting a different trigger for a routine suited accordingly based on 
+										whether it was night or day. 
+									</p> <br />
+									<p>
+										Overall, this was a fun little smart home product that could have the 
+										potential to be used in numerous ways. 
+										As mentioned it could be useful for hot desking multiple people and their 
+										different routines to a desk. For me it proves a useful tool when switching 
+										between my use of my desk when I needed to study during the day and wanted 
+										down time to play games in the evening.
 									</p>
 								</div> <br />
 								<ul class="actions fit small">
@@ -259,7 +303,7 @@
 								</ul>
 							</article>
 							<ul class="actions fit small hidden-mobile">
-								<li><a onclick="hideDoubleProj('hideSmartDesk', 'hideApp', 'textSmartAPP')" id="textsmartApp" class="hidden-mobile button primary fit small">Learn more!</a></li>
+								<li><a onclick="hideDoubleProj('hideSmartDesk', 'hideApp', 'textSmartApp')" id="textSmartApp" class="hidden-mobile button primary fit small">Learn more!</a></li>
 							</ul>
 						</div>
 					</section>

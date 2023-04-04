@@ -51,8 +51,7 @@ consoleText([
 	colours);
 
 consoleText([
-	'SQLiteOpenHelper', 'SQLiteDatabase', 'MatPlotLib', 'Pickle', 'PyTorch',
-	'tkinter'], 
+	'SQLiteOpenHelper', 'SQLiteDatabase'], 
 	'app_Libraries',
 	colours);
 
